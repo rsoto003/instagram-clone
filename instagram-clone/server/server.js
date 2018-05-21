@@ -17,9 +17,22 @@ let schema = buildSchema(`
         caption: String!
         image: String!
     }
-    type Query{
+    type Query {
         user(id: String) : User!
         post(user_id: String, post_id: String) : Post!
         posts(user_id: String) : [Post]
     }
 `)
+
+let userslist = {
+    a: {
+        id: "a",
+        nickname: "Chris",
+        avatar: "https://laravelnigeria.com/img/chris.jpg"
+    },
+}
+let postslist = {
+    a: {
+        
+    }
+}
