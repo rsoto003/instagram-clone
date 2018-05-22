@@ -33,6 +33,30 @@ let userslist = {
 }
 let postslist = {
     a: {
-        
+      a: {
+        id: "a",
+        user: userslist["a"],
+        caption: "Moving the community!",
+        image: "https://pbs.twimg.com/media/DOXI0IEXkAAkokm.jpg"
+      },
+      b: {
+        id: "b",
+        user: userslist["a"],
+        caption: "Angular Book :)",
+        image:
+          "https://cdn-images-1.medium.com/max/1000/1*ltLfTw87lE-Dqt-BKNdj1A.jpeg"
+      },
+      c: {
+        id: "c",
+        user: userslist["a"],
+        caption: "Me at Frontstack.io",
+        image: "https://pbs.twimg.com/media/DNNhrp6W0AAbk7Y.jpg:large"
+      },
+      d: {
+        id: "d",
+        user: userslist["a"],
+        caption: "Moving the community!",
+        image: "https://pbs.twimg.com/media/DOXI0IEXkAAkokm.jpg"
+      }
     }
-}
+  };
