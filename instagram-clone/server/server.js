@@ -2,8 +2,20 @@ let express = require("express");
 let graphqlHTTP = require("express-graphql");
 let { buildSchema } = require("graphql");
 let cors = require("cors");
+let server = express();
 
 /* - - - graphql schemas - - - */
+
+express.use(cors());
+express.use(
+    "/graphql",
+    graphqlHTTP({
+        schema: schema,
+        rootValue: root,
+        graphiql: true
+    })
+)
+app.listen(4000);
 
 let schema = buildSchema(`
     type User {
